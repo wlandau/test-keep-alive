@@ -7,7 +7,7 @@ on:
 jobs:
   keep_alive:
     runs-on: ubuntu-latest
-
+    steps:
       - name: Keep cronjob based triggers of GitHub workflows alive
         uses: PhrozenByte/gh-workflow-immortality@v1
         with:
