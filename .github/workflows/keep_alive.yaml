@@ -11,5 +11,5 @@ jobs:
       - name: Keep cronjob based triggers of GitHub workflows alive
         uses: PhrozenByte/gh-workflow-immortality@v1
         with:
-          secret: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          secret: ${{ secrets.KEEP_ALIVE_TOKEN }}
           repos: ${{ github.repository }}
