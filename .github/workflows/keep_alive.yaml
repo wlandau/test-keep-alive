@@ -14,4 +14,4 @@ jobs:
           secret: ${{ secrets.KEEP_ALIVE_TOKEN }}
           repos: |
             ${{ github.owner }}/test-keep-alive
-            ${{ github.owner }}/test-keep-alive-1]
+            ${{ github.owner }}/test-keep-alive-1
