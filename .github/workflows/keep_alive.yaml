@@ -1,0 +1,15 @@
+# Keep GitHub Actions scheduled workflows alive.
+name: keep_alive
+
+on:
+  workflow_dispatch:
+
+jobs:
+  keep_alive:
+    runs-on: ubuntu-latest
+
+      - name: Keep cronjob based triggers of GitHub workflows alive
+        uses: PhrozenByte/gh-workflow-immortality@v1
+        with:
+          secret: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          repos: ${{ github.repository }}
